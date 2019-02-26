@@ -6,3 +6,4 @@ I'm using Maven version 3.3.9 and Java version 1.8.0_144.
     `mvn exec:java -Dexec.mainClass="ApiConsoleApplication" -Dexec.args="arg0 arg1 arg2 arg3 arg4"`
 * For the second part, to run the web server you could either to the same as above, creating run configuration and selecting the main class as **Server** or run this command 
   `mvn exec:java -Dexec.mainClass="Server"`
+* A web server will start at `localhost:4567` and the path for part 2 is `localhost:4567/getCars`. The request should look like this `http://localhost:4567/getCars?latitudePickup=51.470020&longitudePickup=-0.454295&latitudeDropoff=51.470020&longitudeDropoff=-0.454295&noPassengers=4`
